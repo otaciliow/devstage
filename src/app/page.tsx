@@ -8,7 +8,6 @@ import logo from '@/assets/logo.svg';
 
 export default function Home() {
   return (
-    <main className="max-w-[1240] mx-auto px-5 py-8 md:py-0">
       <div className="min-h-dvh flex items-center justify-center gap-16 flex-col md:flex-row">
         
         <div className="flex flex-col gap-8 items-center md:items-start">
@@ -64,6 +63,5 @@ export default function Home() {
         </div>
 
       </div>
-    </main>
   );
 }
