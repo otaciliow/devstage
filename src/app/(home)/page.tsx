@@ -1,8 +1,7 @@
-import { ArrowRight, Mail, Radio, User } from 'lucide-react';
+import { Radio } from 'lucide-react';
 import Image from 'next/image';
 
-import { Button } from '@/components/button';
-import { InputField, InputIcon, InputRoot } from '@/components/input';
+import { SubscriptionForm } from '@/app/(home)/subscription-form';
 
 import logo from '@/assets/logo.svg';
 
@@ -35,29 +34,7 @@ export default function Home() {
 
             </div>
 
-            <form action="" className="bg-gray-700 border border-gray-600 rounded-2xl p-8 space-y-6 w-full md:max-w-[440]">
-              <h2 className="font-heading font-bold text-gray-200 text-xl">Inscrição</h2>
-              <div className="space-y-3">
-                <InputRoot>
-                  <InputIcon>
-                    <User />
-                  </InputIcon>
-                  <InputField type="text" placeholder="Nome completo" />
-                </InputRoot>
-
-                <InputRoot>
-                  <InputIcon>
-                    <Mail />
-                  </InputIcon>
-                  <InputField type="email" placeholder="E-mail" />
-                </InputRoot>
-              </div>
-
-              <Button>
-                Confirmar
-                <ArrowRight />
-              </Button>
-            </form>
+            <SubscriptionForm />
 
           </div>
         </div>
