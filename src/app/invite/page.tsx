@@ -2,14 +2,14 @@ import Image from "next/image";
 
 import logo from '@/assets/logo.svg';
 
-import Ranking from './ranking';
-import Stats from './stats';
-
-import { IconButton } from '@/components/icon-button';
-import { InputField, InputIcon, InputRoot } from '@/components/input';
-import { Copy, Link } from "lucide-react";
+import { InviteLinkInput } from './invite-link-input';
+import { Ranking } from './ranking';
+import { Stats } from './stats';
 
 export default function InvitePage() {
+
+    const inviteLink = 'http://localhost:3000/invite/12312hgg12312'
+
     return (
         <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
             <div className="flex flex-col gap-10 w-full max-w-[550]">
@@ -26,15 +26,7 @@ export default function InvitePage() {
                         <p className="text-gray-300">Convide mais pessoas para o evento e concorra a prêmios exclusivos! É só compartilhar o link abaixo e acompanhar as inscrições:</p>
                     </div>
 
-                    <InputRoot>
-                        <InputIcon>
-                            <Link className="size-5" />
-                        </InputIcon>
-                        <InputField defaultValue="https://localhost:3000/invite/ji3j1o2i3jo2ijo1" readOnly />
-                        <IconButton className="-mr-2">
-                            <Copy className="size-5" />
-                        </IconButton>
-                    </InputRoot>
+                    <InviteLinkInput inviteLink={inviteLink} />
 
                     <Stats />
 

@@ -4,7 +4,7 @@ import medalCopper from '@/assets/medal-cooper.svg';
 import medalGold from '@/assets/medal-gold.svg';
 import medalSilver from '@/assets/medal-silver.svg';
 
-export default function Ranking() {
+export function Ranking() {
     return (
         <div className="w-full max-w-[440] space-y-5">
             <h2 className="text-xl text-gray-200 font-heading font-semibold leading-none">Ranking de Indicações</h2>
